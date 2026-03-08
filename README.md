@@ -2,6 +2,8 @@
 
 ## Project Overview
 
+<img width="322" height="479" alt="Screenshot 2026-03-08 at 4 31 40 PM" src="https://github.com/user-attachments/assets/eea7f73c-324a-4883-82b0-43d5f6cdffe5" />
+
 This repository documents hands-on **Incident Response (IR) labs** performed using **Microsoft Sentinel** and **Microsoft Defender for Endpoint (MDE)**.
 
 The goal of this project is to simulate real-world SOC investigations and demonstrate the full incident response lifecycle following **NIST 800-61** methodology.
