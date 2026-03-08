@@ -20,6 +20,27 @@ The investigation demonstrates how Microsoft Sentinel and Microsoft Defender for
 | VM | Windows Virtual Machine |
 | Query Language | Kusto Query Language (KQL) |
 
+# Lab Architecture
+
+Attacker
+   │
+   ▼
+Internet
+   │
+   ▼
+Azure VM
+   │
+   ▼
+Microsoft Defender for Endpoint
+   │
+   ▼
+Sentinel Analytics Rule
+   │
+   ▼
+Incident Created
+   │
+   ▼
+SOC Investigation
 ---
 
 # Detection Logic
