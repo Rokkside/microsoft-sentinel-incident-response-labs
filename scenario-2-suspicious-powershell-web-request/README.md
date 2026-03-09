@@ -20,56 +20,10 @@ The investigation demonstrates how Microsoft Sentinel and Microsoft Defender for
 | VM | Windows Virtual Machine |
 | Query Language | Kusto Query Language (KQL) |
 
-# Lab Architecture
-
----
-# Scenario 2 — Suspicious PowerShell Web Request
-
-## Objective
-
-The objective of this lab is to detect and investigate suspicious PowerShell activity where a system attempts to download external content using `Invoke-WebRequest`.
-
-This type of behavior is commonly associated with malware staging, payload delivery, or attacker command execution.
-
-The investigation demonstrates how Microsoft Sentinel and Microsoft Defender for Endpoint telemetry can be used to identify suspicious PowerShell execution and perform incident triage.
-
----
-
-# Lab Environment
-
-| Component | Description |
-|--------|-------------|
-| SIEM | Microsoft Sentinel |
-| Endpoint Telemetry | Microsoft Defender for Endpoint |
-| Log Source | DeviceProcessEvents |
-| VM | Windows Virtual Machine |
-| Query Language | Kusto Query Language (KQL) |
-
 ---
 
 # Lab Architecture
-
-Attacker
-   │
-   ▼
-Internet
-   │
-   ▼
-Azure VM
-   │
-   ▼
-Microsoft Defender for Endpoint
-   │
-   ▼
-Sentinel Analytics Rule
-   │
-   ▼
-Incident Created
-   │
-   ▼
-SOC Investigation
-
-
+<img width="330" height="395" alt="Screenshot 2026-03-08 at 5 01 43 PM" src="https://github.com/user-attachments/assets/196cdaef-8230-48f2-9c97-9b25862d2e51" />
 # Detection Logic
 
 The detection focuses on identifying PowerShell commands attempting to download external resources from the internet using common download utilities such as:
