@@ -39,7 +39,7 @@ These commands are often used by attackers to retrieve malicious scripts or bina
 
 # Detection Query (KQL)
 
- <img width="1417" height="456" alt="Screenshot 2026-03-08 at 5 09 43 PM" src="https://github.com/user-attachments/assets/67959155-77a5-44f7-b37f-f19aff2b1ff7" />
+<img width="1417" height="532" alt="Screenshot 2026-03-08 at 5 17 17 PM" src="https://github.com/user-attachments/assets/674cf9ec-d4b7-458d-a332-7f37b38e09b7" />
 
 This query searches for PowerShell processes executing commands containing Invoke-WebRequest.
 
