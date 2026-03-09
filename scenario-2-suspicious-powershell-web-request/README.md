@@ -39,7 +39,7 @@ These commands are often used by attackers to retrieve malicious scripts or bina
 
 # Detection Query (KQL)
 
-```kql
+ kql
 DeviceProcessEvents
 | where FileName == "powershell.exe"
 | where ProcessCommandLine contains "Invoke-WebRequest"
