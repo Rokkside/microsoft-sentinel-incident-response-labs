@@ -46,88 +46,33 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, ProcessCommandLine, InitiatingProcessFileName
 | order by Timestamp desc
 
-
-
 This query searches for PowerShell processes executing commands containing Invoke-WebRequest.
 
 Investigation Steps
 1. Incident Detection
 
-Microsoft Sentinel analytics rule triggered an alert based on suspicious PowerShell activity.
+ - Microsoft Sentinel analytics rule triggered an alert based on suspicious PowerShell activity.
 
-Indicators included:
+ - Indicators included:
 
-PowerShell execution
+ - PowerShell execution
 
-External web request
+ - External web request
 
-Command-line download attempt
-
-2. Process Investigation
-
-Using Microsoft Defender for Endpoint telemetry, the following was analyzed:
-
-Process execution details
-
-Command line arguments
-
-Initiating parent process
-
-Associated user account
-
-Key telemetry source:
-DeviceProcessEvents
-
-# Detection Logic
-
-The detection focuses on identifying PowerShell commands attempting to download external resources from the internet using common download utilities such as:
-
-- `Invoke-WebRequest`
-- `wget`
-- `curl`
-- `DownloadString`
-
-These commands are often used by attackers to retrieve malicious scripts or binaries.
-
----
-
-# Detection Query (KQL)
-
-```kql
-DeviceProcessEvents
-| where FileName == "powershell.exe"
-| where ProcessCommandLine contains "Invoke-WebRequest"
-| project Timestamp, DeviceName, AccountName, ProcessCommandLine, InitiatingProcessFileName
-| order by Timestamp desc
-
-
-
-This query searches for PowerShell processes executing commands containing Invoke-WebRequest.
-
-Investigation Steps
-1. Incident Detection
-
-Microsoft Sentinel analytics rule triggered an alert based on suspicious PowerShell activity.
-
-Indicators included:
-
-PowerShell execution
-
-External web request
-
-Command-line download attempt
+ - Command-line download attempt
 
 2. Process Investigation
 
 Using Microsoft Defender for Endpoint telemetry, the following was analyzed:
 
-Process execution details
+ - Process execution details
 
-Command line arguments
+ - Command line arguments
 
-Initiating parent process
+ - Initiating parent process
 
-Associated user account
+ - Associated user account
 
 Key telemetry source:
 DeviceProcessEvents
+
