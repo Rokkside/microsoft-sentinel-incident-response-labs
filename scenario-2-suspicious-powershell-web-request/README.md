@@ -45,27 +45,27 @@ This query searches for PowerShell processes executing commands containing Invok
 Investigation Steps
 1. Incident Detection
 
- - Microsoft Sentinel analytics rule triggered an alert based on suspicious PowerShell activity.
+  - Microsoft Sentinel analytics rule triggered an alert based on suspicious PowerShell activity.
 
- - Indicators included:
+  - Indicators included:
 
- - PowerShell execution
+  - PowerShell execution
 
- - External web request
+  - External web request
 
- - Command-line download attempt
+  - Command-line download attempt
 
 2. Process Investigation
 
 Using Microsoft Defender for Endpoint telemetry, the following was analyzed:
 
- - Process execution details
+  - Process execution details
 
- - Command line arguments
+  - Command line arguments
 
- - Initiating parent process
+  - Initiating parent process
 
- - Associated user account
+  - Associated user account
 
 Key telemetry source:
 DeviceProcessEvents
