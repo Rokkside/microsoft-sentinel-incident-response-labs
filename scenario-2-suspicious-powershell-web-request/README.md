@@ -47,9 +47,9 @@ This query searches for PowerShell processes executing commands containing Invok
 
 1. Incident Detection
 
-  - Microsoft Sentinel analytics rule triggered an alert based on suspicious PowerShell activity.
+Microsoft Sentinel analytics rule triggered an alert based on suspicious PowerShell activity.
 
-  - Indicators included:
+Indicators included:
 
   - PowerShell execution
 
