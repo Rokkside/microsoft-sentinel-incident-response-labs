@@ -23,7 +23,10 @@ The investigation demonstrates how Microsoft Sentinel and Microsoft Defender for
 ---
 
 # Lab Architecture
+
 <img width="330" height="395" alt="Screenshot 2026-03-08 at 5 01 43 PM" src="https://github.com/user-attachments/assets/196cdaef-8230-48f2-9c97-9b25862d2e51" />
+
+
 # Detection Logic
 
 The detection focuses on identifying PowerShell commands attempting to download external resources from the internet using common download utilities such as:
